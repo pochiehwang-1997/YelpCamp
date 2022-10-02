@@ -1,0 +1,33 @@
+<% layout("layouts/boilerplate")%>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                <div class="card shadow">
+                    
+                    <img src="https://optimise2.assets-servd.host/steadfast-tern/production/baby-penguins.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1631319140&s=842bdbb4d3188259d8ff87f388699930" alt="" class="card-img-top">
+                    <h1 class="card-title text-center mt-3">Login</h1>
+                    <div class="card-body">
+                        <form action="/login" class="needs-validation" novalidate method="POST">
+                            <div class="mb-3">
+                                <label class="form-label" for="username">Username</label>
+                                <input class="form-control" type="text" name="username" id="username"
+                                    placeholder="Username" autofocus required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-control" type="password" name="password" id="password"
+                                    placeholder="Password" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <button class="btn btn-success btn-block">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

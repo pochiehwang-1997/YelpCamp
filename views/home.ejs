@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheet/home.css">
+</head>
+
+<body class="d-flex flex-column text-center text-white bg-dark">
+    <div class=" d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>         
+                <nav class=" navbar navbar-expand-lg float-md-right">
+                    <div class="container-fluid">
+                    <h1 class="navbar-brand text-warning fs-2">YelpCamp</h1>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="/campgrounds">Campgrounds</a>
+                    <div class="navbar-nav ms-auto">
+                    <% if(!currentUser){ %>
+                        <a class="nav-link" href="/login">Login</a>
+                        <a class="nav-link" href="/register">Register</a>
+                        <% }else{ %>
+                            <a class="nav-link" href="/logout">Logout</a>
+                            <% } %>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="px-3">
+            <h1>YelpCamp</h1>
+            <p class="lead">Hello welcome to YelpCamp!!!
+                <br> I don't know what to type but I still have to type something here
+            </p>
+            <a href="/campgrounds" class="btn btn-lg btn-secondary font-weight-bold">View campgrounds</a>
+        </main>
+        <footer class="mt-auto text-white-50">
+            <p class="text-warning"> &copy; 2022 YelpCamp</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
